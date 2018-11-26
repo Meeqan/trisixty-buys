@@ -1,0 +1,74 @@
+#auth-bg {
+  background-attachment: fixed;
+  background-image: url("../assets/auth-bg-blur.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .auth-bg-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(34, 42, 83, 0.72));
+    min-height: 100vh;
+
+    h2,
+    h6 {
+      color: $white-text;
+    }
+
+    .auth-form-wrapper {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .auth-header {
+      border-bottom: 1px $white-text solid;
+      font-size: 1.45rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 1rem 0;
+    }
+
+    .form-wrapper {
+      width: 400px;
+
+      ::placeholder {
+        color: $placeholder-color;
+        font-weight: 600;
+      }
+    }
+
+    .social-login {
+      margin: 3rem 0;
+    }
+
+    a {
+      color: $white-text;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        color: $grey-II;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  // mobile responsiveness
+  @media only screen and (max-width: 768px) {
+    .auth-bg-overlay {
+      .auth-header {
+        font-size: 1.25rem;
+      }
+
+      .form-wrapper {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 430px) {
+    }
+  }
+}

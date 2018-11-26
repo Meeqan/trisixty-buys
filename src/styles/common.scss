@@ -1,0 +1,40 @@
+// colors
+$primary-color: #ed732f;
+$primary-color-accent: #f89c40;
+$secondary-color: #245463;
+$secondary-color-accent: #77aa8a;
+$white-text: white;
+$grey-II: #ccc;
+$grey-I: #eee;
+$placeholder-color: #b3b3b3;
+
+.box {
+  border: 2px red dotted;
+}
+
+.custom-form-control {
+  background: $grey-I;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: none;
+  font-weight: 600;
+  outline: none;
+}
+
+.form-control:focus {
+  background: $grey-I;
+  box-shadow: none;
+}
+
+.input-group-text {
+  background: $grey-I;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.375rem 1.75rem;
+}
+
+.icon {
+  height: 3.125rem;
+  margin: 0 0.625rem;
+  width: 3.125rem;
+}

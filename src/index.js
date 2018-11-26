@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // eslint-disable-next-line
+import $ from 'jquery'; // eslint-disable-next-line
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './styles/index.scss';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/js/all.min';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+$(() => {
+  $('[data-toggle="popover"]').popover();
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

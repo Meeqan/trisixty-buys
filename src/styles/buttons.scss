@@ -1,0 +1,11 @@
+.btn-custom {
+  background-color: $primary-color;
+  border-radius: 5rem;
+  box-shadow: none;
+  color: $white-text;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $primary-color-accent;
+  }
+}
