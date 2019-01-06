@@ -1,6 +1,6 @@
 #auth-bg {
   background-attachment: fixed;
-  background-image: url("../assets/auth-bg-blur.jpg");
+  background-image: url("../assets/cloth-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,6 +28,11 @@
       font-weight: bold;
       letter-spacing: 1px;
       padding: 1rem 0;
+    }
+
+    .auth-password-reset-p {
+      color: $white-text;
+      font-size: 0.9rem;
     }
 
     .form-wrapper {
