@@ -1,0 +1,41 @@
+.loader {
+  height: 2rem;
+}
+
+.input-group-text {
+  background: transparent;
+  border: 1px solid $secondary-color;
+  border-radius: 5rem;
+  border-right: none;
+  padding: 0.375rem 1.75rem;
+}
+
+.custom-form-control {
+  background: transparent;
+  border: 1px solid $secondary-color;
+  border-left: none;
+  border-radius: 5rem;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-control {
+  font-weight: 200;
+}
+
+.form-control:focus {
+  background: transparent;
+  border: 1px solid $secondary-color;
+  border-left: none;
+  box-shadow: none;
+}
+
+.Toastify__toast {
+  border-radius: 0.25rem;
+  padding: 0.5125rem;
+}
+
+.Toastify__toast-body {
+  font-size: 0.85rem;
+  font-weight: 500;
+}

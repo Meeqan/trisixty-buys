@@ -1,0 +1,152 @@
+body {
+  overflow: hidden;
+}
+
+.shapes {
+  position: absolute;
+  z-index: -10;
+
+  &_1 {
+    left: -10%;
+    top: -15%;
+  }
+
+  &_2 {
+    bottom: -80%;
+    right: -70%;
+  }
+}
+
+// Page wrapper
+.wrapper {
+  @include center;
+
+  flex-direction: row;
+  min-height: 100vh;
+
+  &-background {
+    background: rgba($bg-color, 1);
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+    min-height: 400px;
+    width: 80%;
+  }
+
+  &-flex-space-around {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .form-center-line {
+    border-left: 2px solid $primary-text-color;
+    min-height: 300px;
+  }
+
+  .form-right {
+    padding: 2rem 1rem;
+  }
+
+  // Form wrapper
+  .form {
+    &-wrapper {
+      width: 400px;
+
+      ::placeholder {
+        color: lighten($grey, 40);
+        font-weight: 300;
+      }
+    }
+
+    &-header {
+      border-bottom: 1px $primary-text-color solid;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 1rem 0;
+    }
+
+    &-password-reset-p {
+      font-size: 0.9rem;
+    }
+
+    &-social-login {
+      align-items: baseline;
+      display: flex;
+      font-size: 0.85rem;
+      justify-content: space-between;
+
+      .icon {
+        height: 2rem;
+        margin: 0 0.2rem;
+        width: 2rem;
+      }
+
+      .social-icons {
+        align-items: baseline;
+        display: flex;
+      }
+    }
+  }
+
+  small {
+    font-size: 0.5rem;
+    margin-top: -1rem;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+}
+
+a {
+  color: $secondary-color;
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($grey, 10);
+    transition: all 0.5s;
+  }
+}
+
+// mobile responsiveness
+@media only screen and (max-width: 768px) {
+  .shapes {
+    &_2 {
+      right: unset;
+    }
+  }
+
+  .wrapper {
+    .form-center-line {
+      display: none;
+    }
+
+    &-background {
+      width: 100%;
+    }
+
+    .form-left {
+      display: none;
+    }
+
+    .form {
+      &-social-login {
+        display: unset;
+
+        p {
+          margin: 2px;
+        }
+
+        .social-icons {
+          display: unset;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+}

@@ -1,0 +1,19 @@
+.btn-custom {
+  background-color: $primary-color;
+  border-radius: 5rem;
+  box-shadow: none;
+  color: $white-text;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $primary-color-accent;
+    color: $white-text;
+  }
+
+  &:disabled {
+    background-color: $grey-II;
+    color: $secondary-color;
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+}

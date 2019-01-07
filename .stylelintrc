@@ -4,6 +4,10 @@
   "rules": {
     "at-rule-no-unknown": [ true, {
       "ignoreAtRules": [
+        "mixin",
+        "if",
+        "for",
+        "include",
         "extends",
         "ignores"
       ]
